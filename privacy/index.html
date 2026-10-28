@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Veilcrown Privacy Policy</title>
-<meta name="description" content="Privacy policy for Veilcrown. Veilcrown collects no personal data.">
+<meta name="description" content="Privacy policy for Veilcrown. Offline play collects nothing; optional online play keeps a random player ID, your chosen name and your online games.">
 <meta name="color-scheme" content="dark">
 <link rel="stylesheet" href="../style.css">
 </head>
@@ -17,10 +17,10 @@
 
 <section id="en" lang="en">
 <h1>Privacy policy</h1>
-<p class="meta">Effective date: 2026-10-20. Developer: Ali Rıza Yüksektepe. App: Veilcrown (bundle ID com.yuksektepe.veilcrown), iPhone and iPad.</p>
+<p class="meta">Effective date: ONLINE_RELEASE_DATE. Developer: Ali Rıza Yüksektepe. App: Veilcrown (bundle ID com.yuksektepe.veilcrown).</p>
 
 <h2>Short version</h2>
-<p>Veilcrown does not collect personal data. It has no accounts, no ads, no analytics and no tracking. The developer does not receive anything about you or your play.</p>
+<p>If you only play offline, Veilcrown collects nothing. Online play is optional. When you use it, our server keeps a random player ID, the name you choose, your online games and ratings, and any reports you file. There are no ads, no analytics and no tracking. You can delete your online data at any time from Settings.</p>
 
 <h2>What stays on your device</h2>
 <p>Your progress is stored in a save file inside the app on your device: gold, level, XP, items you own, settings such as language, stats such as games played and your Elo against the bots, badges, puzzle results, and your last finished game. This file is not sent to the developer.</p>
@@ -29,24 +29,50 @@
 <p>If you are signed in to iCloud, Veilcrown also writes the same save to iCloud key-value storage (Apple's service) so your progress can follow you to your other devices. This data lives in your own iCloud account. The developer cannot read it. You can turn it off for Veilcrown in the Settings app under your name, iCloud, and delete it under Manage Account Storage. Apple's own privacy policy covers how iCloud works.</p>
 
 <h2>In-app purchases</h2>
-<p>Purchases are made and processed by Apple through the App Store. Veilcrown does not see your name, email address, payment method or Apple Account. The app only learns that a product was bought, so it can unlock the item. Restore purchases asks Apple which products your account owns.</p>
+<p>Purchases are made and processed by Apple through the App Store (or by Google through Google Play on Android). Veilcrown does not see your name, email address, payment method or store account. The app only learns that a product was bought, so it can unlock the item. Restore purchases asks the store which products your account owns.</p>
+
+<h2 id="online">Online play (optional)</h2>
+<p>Nothing is sent to our server until you open Online on the main menu and accept the rules. The game then creates a random player ID. It is not linked to your Apple or Google account, email address or phone number. Your device keeps the key for this ID in the iOS Keychain or the Android Keystore.</p>
+<p>The server keeps:</p>
+<ul>
+<li>your player ID and the display name you choose. Other players see the name, your rating and your season badge in games and on the league table. Names pass a filter and can be reported.</li>
+<li>your online games: moves, move times, clocks, results and the rating change of each ranked game. We use move times to look for cheating.</li>
+<li>your place in each monthly league season.</li>
+<li>the players you block.</li>
+<li>reports you file about a name or about cheating, and reports other players file about you.</li>
+<li>a keyed hash of your IP address. The IP address itself is never stored. The hash lets us limit requests, keep two players on the same network from meeting in ranked games, and make reports harder to abuse.</li>
+</ul>
+<p>There is no chat. We do not collect your email, real name, location, contacts or device identifiers.</p>
+<p>We use this data only to run online play, keep it fair and safe (cheating checks, reports, blocks, request limits) and show the league table. The legal basis is providing the online play you asked for and our legitimate interest in keeping it fair. We do not sell the data, share it for advertising or use it to build profiles.</p>
+<p>The server runs on Cloudflare Workers. Cloudflare, Inc. stores and processes this data for us as a service provider, and its data centres can be outside your country. All traffic between the app and the server is encrypted.</p>
+
+<h2>How long online data is kept</h2>
+<ul>
+<li>Open invites: 24 hours. Friend games: 30 days after the game ends. Ranked games: 75 days after the game ends, so a whole season can be checked for cheating.</li>
+<li>League season tables: 120 days after the season ends, then the whole season is erased.</li>
+<li>Reports: 90 days after they are closed, and at most 180 days while open.</li>
+<li>The IP hash used for request limits: about 2 hours.</li>
+<li>Your profile, name, rating, badges and blocks: until you delete them, or until 12 months pass without any online use. Then they are deleted automatically.</li>
+</ul>
 
 <h2>What Veilcrown does not do</h2>
 <ul>
-<li>No account or sign-in is needed.</li>
+<li>No sign-in, email or password. Online play uses a random ID.</li>
 <li>No advertising, and no advertising identifier is used.</li>
 <li>No analytics, crash reporting or usage tracking, from us or from third parties.</li>
 <li>No tracking across other companies' apps or websites.</li>
-<li>No chat and no user-generated content.</li>
+<li>No chat. The only text other players see is your display name.</li>
 <li>No access to your contacts, photos, location, camera or microphone.</li>
 </ul>
-<p>The game works offline. The only network use is Apple's: the App Store for purchases and iCloud for the optional sync. The Privacy button in Settings opens this page in your browser.</p>
+<p>The game works offline. Offline, the only network use is the store for purchases and iCloud for the optional sync. Online play talks to our server. The Privacy button in Settings opens this page in your browser.</p>
 
 <h2>Children</h2>
-<p>Veilcrown has no ads, no chat, no accounts and collects no data, so it can be used by children without data going anywhere. Purchases need the Apple Account holder, and parents can use Apple's Ask to Buy and Screen Time to control them. The game shows fantasy fight scenes between chess pieces, without blood.</p>
+<p>Veilcrown has no ads and no chat. Offline play sends no data anywhere. In online play, other players see a display name, a rating and a badge, and names are filtered and can be reported and blocked. Nothing goes to our server unless Online is opened. Purchases need the store account holder, and parents can control them with Apple's Ask to Buy and Screen Time or Google Play's purchase approvals. The game shows fantasy fight scenes between chess pieces, without blood.</p>
 
-<h2>Your rights and deleting data</h2>
-<p>Because the developer holds no data about you, there is nothing to access, correct or delete on our side. Deleting the app removes the local save. To remove the iCloud copy, use Manage Account Storage as described above.</p>
+<h2 id="delete">Your rights and deleting data</h2>
+<p><strong>In the app:</strong> open Settings and tap "Delete my online data". This deletes your player ID, name, rating, badges, blocks, league rows, the reports you filed and your games at once. Reports about you lose their link to your games.</p>
+<p><strong>Without the app:</strong> email <a href="mailto:yuksektepe.aliriza@odexi.app?subject=Veilcrown%20data%20deletion">yuksektepe.aliriza@odexi.app</a> with the display name you used and roughly when you last played online. Your profile is not tied to an email address, so we may not be able to find it from a name alone. Either way, a profile with no online use for 12 months is deleted automatically.</p>
+<p>You can also ask us at the same address for a copy of your online data or to correct it, and you can complain to your data protection authority. Deleting the app removes the local save. To remove the iCloud copy, use Manage Account Storage as described above.</p>
 
 <h2>Changes to this policy</h2>
 <p>If the app changes what it does with data, this page will be updated first and the effective date will change.</p>
@@ -57,10 +83,10 @@
 
 <section id="tr" lang="tr">
 <h1>Gizlilik politikası</h1>
-<p class="meta">Yürürlük tarihi: 2026-10-20. Geliştirici: Ali Rıza Yüksektepe. Uygulama: Veilcrown (paket kimliği com.yuksektepe.veilcrown), iPhone ve iPad.</p>
+<p class="meta">Yürürlük tarihi: ONLINE_RELEASE_DATE. Geliştirici: Ali Rıza Yüksektepe. Uygulama: Veilcrown (paket kimliği com.yuksektepe.veilcrown).</p>
 
 <h2>Kısaca</h2>
-<p>Veilcrown kişisel veri toplamaz. Hesap, reklam, analitik ve takip yok. Geliştirici senin ya da oyunun hakkında hiçbir şey almaz.</p>
+<p>Yalnızca internetsiz oynuyorsan Veilcrown hiçbir veri toplamaz. Çevrimiçi oyun isteğe bağlıdır. Kullanırsan sunucumuz rastgele bir oyuncu kimliğini, seçtiğin adı, çevrimiçi oyunlarını ve puanlarını, gönderdiğin şikâyetleri saklar. Reklam, analitik ve takip yok. Çevrimiçi verilerini istediğin zaman Ayarlar'dan silebilirsin.</p>
 
 <h2>Cihazında kalanlar</h2>
 <p>İlerlemen, cihazındaki uygulamanın içinde bir kayıt dosyasında tutulur: altın, seviye, XP, sahip olduğun ürünler, dil gibi ayarlar, oynanan oyun sayısı ve botlara karşı Elo puanın gibi istatistikler, rozetler, bulmaca sonuçları ve son biten oyunun. Bu dosya geliştiriciye gönderilmez.</p>
@@ -69,24 +95,50 @@
 <p>iCloud'a giriş yaptıysan Veilcrown aynı kaydı iCloud anahtar-değer depolamasına (Apple'ın hizmeti) da yazar, böylece ilerlemen diğer cihazlarına geçebilir. Bu veri senin kendi iCloud hesabında durur. Geliştirici onu okuyamaz. Veilcrown için Ayarlar uygulamasında adının altındaki iCloud bölümünden kapatabilir, Hesap Depolamasını Yönet bölümünden silebilirsin. iCloud'un nasıl çalıştığı Apple'ın kendi gizlilik politikasında anlatılır.</p>
 
 <h2>Uygulama içi satın alımlar</h2>
-<p>Satın alımları Apple, App Store üzerinden yapar ve işler. Veilcrown adını, e-posta adresini, ödeme yöntemini ve Apple Hesabını görmez. Uygulama yalnızca bir ürünün satın alındığını öğrenir ve ürünü açar. Satın alımları geri yükle, hesabının hangi ürünlere sahip olduğunu Apple'a sorar.</p>
+<p>Satın alımları Apple, App Store üzerinden (Android'de Google, Google Play üzerinden) yapar ve işler. Veilcrown adını, e-posta adresini, ödeme yöntemini ve mağaza hesabını görmez. Uygulama yalnızca bir ürünün satın alındığını öğrenir ve ürünü açar. Satın alımları geri yükle, hesabının hangi ürünlere sahip olduğunu mağazaya sorar.</p>
+
+<h2 id="cevrimici">Çevrimiçi oyun (isteğe bağlı)</h2>
+<p>Ana menüde Çevrimiçi'yi açıp kuralları kabul edene kadar sunucumuza hiçbir şey gitmez. Bundan sonra oyun rastgele bir oyuncu kimliği oluşturur. Bu kimlik Apple ya da Google hesabına, e-posta adresine veya telefon numarana bağlı değildir. Kimliğin anahtarı cihazında, iOS Anahtar Zinciri'nde ya da Android Keystore'da durur.</p>
+<p>Sunucuda tutulanlar:</p>
+<ul>
+<li>oyuncu kimliğin ve seçtiğin görünen ad. Diğer oyuncular oyunlarda ve lig tablosunda adını, puanını ve sezon rozetini görür. Adlar bir filtreden geçer ve şikâyet edilebilir.</li>
+<li>çevrimiçi oyunların: hamleler, hamle süreleri, saatler, sonuçlar ve her dereceli oyunun puanına etkisi. Hamle sürelerini hile kontrolü için kullanırız.</li>
+<li>her aylık lig sezonundaki sıran.</li>
+<li>engellediğin oyuncular.</li>
+<li>bir ad ya da hile hakkında gönderdiğin şikâyetler ve başkalarının senin hakkında gönderdiği şikâyetler.</li>
+<li>IP adresinin anahtarlı bir özeti (hash). IP adresinin kendisi hiç saklanmaz. Bu özetle istek sayısını sınırlarız, aynı ağdaki iki oyuncunun dereceli oyunda eşleşmesini önleriz ve şikâyetlerin kötüye kullanılmasını zorlaştırırız.</li>
+</ul>
+<p>Sohbet yok. E-postanı, gerçek adını, konumunu, kişilerini ya da cihaz kimliklerini toplamayız.</p>
+<p>Bu verileri yalnızca çevrimiçi oyunu çalıştırmak, adil ve güvenli tutmak (hile kontrolü, şikâyetler, engellemeler, istek sınırları) ve lig tablosunu göstermek için kullanırız. Hukuki dayanak, istediğin çevrimiçi oyun hizmetinin sunulması ve oyunu adil tutmaktaki meşru menfaatimizdir. Verileri satmayız, reklam için paylaşmayız, profil çıkarmak için kullanmayız.</p>
+<p>Sunucu Cloudflare Workers üzerinde çalışır. Cloudflare, Inc. bu verileri bizim adımıza hizmet sağlayıcı olarak saklar ve işler. Veri merkezleri yurt dışında olabilir. Uygulama ile sunucu arasındaki bütün trafik şifrelidir.</p>
+
+<h2>Çevrimiçi veriler ne kadar saklanır</h2>
+<ul>
+<li>Açık davetler: 24 saat. Arkadaş oyunları: oyun bittikten 30 gün sonra. Dereceli oyunlar: oyun bittikten 75 gün sonra, böylece bütün bir sezon hile için incelenebilir.</li>
+<li>Lig sezon tabloları: sezon bittikten 120 gün sonra sezonun tamamı silinir.</li>
+<li>Şikâyetler: kapandıktan 90 gün sonra, açık kaldıysa en geç 180 gün sonra.</li>
+<li>İstek sınırı için kullanılan IP özeti: yaklaşık 2 saat.</li>
+<li>Profilin, adın, puanın, rozetlerin ve engellemelerin: sen silene kadar ya da 12 ay boyunca çevrimiçi oyunu hiç kullanmazsan. O zaman kendiliğinden silinir.</li>
+</ul>
 
 <h2>Veilcrown'ın yapmadıkları</h2>
 <ul>
-<li>Hesap ya da giriş gerekmez.</li>
+<li>Giriş, e-posta ya da şifre gerekmez. Çevrimiçi oyun rastgele bir kimlik kullanır.</li>
 <li>Reklam yok ve reklam kimliği kullanılmaz.</li>
 <li>Bizden ya da üçüncü taraflardan analitik, çökme raporu ya da kullanım takibi yok.</li>
 <li>Başka şirketlerin uygulamalarında ya da sitelerinde takip yok.</li>
-<li>Sohbet ve kullanıcı içeriği yok.</li>
+<li>Sohbet yok. Diğer oyuncuların gördüğü tek metin görünen adın.</li>
 <li>Kişilerine, fotoğraflarına, konumuna, kameranı ya da mikrofonuna erişmez.</li>
 </ul>
-<p>Oyun internetsiz çalışır. Ağ kullanımı yalnızca Apple'ındır: satın alımlar için App Store, isteğe bağlı eşitleme için iCloud. Ayarlar'daki Gizlilik düğmesi bu sayfayı tarayıcında açar.</p>
+<p>Oyun internetsiz çalışır. İnternetsiz oynarken ağ yalnızca satın alımlar için mağazaya ve isteğe bağlı eşitleme için iCloud'a gider. Çevrimiçi oyun bizim sunucumuzla konuşur. Ayarlar'daki Gizlilik düğmesi bu sayfayı tarayıcında açar.</p>
 
 <h2>Çocuklar</h2>
-<p>Veilcrown'da reklam, sohbet ve hesap yok, veri de toplamaz. Bu yüzden çocuklar kullanabilir ve hiçbir veri bir yere gitmez. Satın alım için Apple Hesabı sahibi gerekir, ebeveynler Satın Almayı Sor ve Ekran Süresi ile bunu denetleyebilir. Oyunda satranç taşları arasında, kansız fantastik dövüş sahneleri var.</p>
+<p>Veilcrown'da reklam ve sohbet yok. İnternetsiz oyun hiçbir yere veri göndermez. Çevrimiçi oyunda diğer oyuncular bir ad, bir puan ve bir rozet görür. Adlar filtreden geçer, şikâyet edilebilir ve engellenebilir. Çevrimiçi açılmadıkça sunucumuza hiçbir şey gitmez. Satın alım için mağaza hesabının sahibi gerekir. Ebeveynler bunu Apple'ın Satın Almayı Sor ve Ekran Süresi özellikleriyle ya da Google Play'in satın alma onayıyla denetleyebilir. Oyunda satranç taşları arasında, kansız fantastik dövüş sahneleri var.</p>
 
-<h2>Hakların ve veri silme</h2>
-<p>Geliştiricide senin hakkında veri bulunmadığı için bizde erişilecek, düzeltilecek ya da silinecek bir şey yok. Uygulamayı silmek yerel kaydı kaldırır. iCloud kopyasını yukarıda anlatıldığı gibi Hesap Depolamasını Yönet bölümünden silebilirsin.</p>
+<h2 id="sil">Hakların ve veri silme</h2>
+<p><strong>Uygulamadan:</strong> Ayarlar'ı aç ve "Çevrimiçi verilerimi sil"e dokun. Bu, oyuncu kimliğini, adını, puanını, rozetlerini, engellemelerini, lig satırlarını, gönderdiğin şikâyetleri ve oyunlarını hemen siler. Senin hakkındaki şikâyetlerin oyunlarınla bağı kopar.</p>
+<p><strong>Uygulama olmadan:</strong> kullandığın görünen adı ve en son yaklaşık ne zaman çevrimiçi oynadığını <a href="mailto:yuksektepe.aliriza@odexi.app?subject=Veilcrown%20veri%20silme">yuksektepe.aliriza@odexi.app</a> adresine yaz. Profilin bir e-posta adresine bağlı olmadığı için yalnızca addan bulamayabiliriz. Her durumda 12 ay boyunca çevrimiçi kullanılmayan profil kendiliğinden silinir.</p>
+<p>Aynı adresten çevrimiçi verilerinin bir kopyasını ya da düzeltilmesini isteyebilir, veri koruma kurumuna şikâyette bulunabilirsin. Uygulamayı silmek yerel kaydı kaldırır. iCloud kopyasını yukarıda anlatıldığı gibi Hesap Depolamasını Yönet bölümünden silebilirsin.</p>
 
 <h2>Değişiklikler</h2>
 <p>Uygulama verilerle ilgili yaptığı işi değiştirirse önce bu sayfa güncellenir ve yürürlük tarihi değişir.</p>
